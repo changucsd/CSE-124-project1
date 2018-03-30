@@ -2,7 +2,7 @@
 CC=g++
 CFLAGS=-ggdb -Wall -Wextra -pedantic -Werror
 DEPS = httpd.h
-SRCS = httpd.cpp
+SRCS = httpd.c
 MAIN_SRCS = main.c $(SRCS)
 MAIN_OBJS = $(MAIN_SRCS:.c=.o)
 

@@ -3,8 +3,24 @@
 
 #include <string>
 
-using namespace std;
+//using namespace std;
 
-void start_httpd(unsigned short port, string doc_root);
+int start_httpd(char* port, char* doc_root);
+
+struct HTTPMessage {
+  char* message;
+  char* client_address;
+};
+
+struct HTTPRequest{
+  char* message;
+  char* client_address;
+};
+
+struct HTTPResponse {
+  char* message;
+  char* client_address;
+};
+
 
 #endif // HTTPD_H
